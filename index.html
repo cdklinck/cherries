@@ -1,0 +1,67 @@
+<style>  
+  :root {
+    --bg-color: #2a0000;
+    --sphere-color1: #610000;
+    --sphere-color2: #990f02;
+    --sphere-color3: #610000;
+    --line-color: #120307;
+    --highlight-color: #d0312d;
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+  }
+
+  .sphere {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--sphere-color1);
+    border: 2px solid var(--line-color);
+  }
+
+  .sphere::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    z-index: 2;
+    left: 13px;
+    top: 12px;
+    border: 8px solid var(--highlight-color);
+    border-top-left-radius: 50px;
+    border-bottom: 0;
+    border-right: 0;
+  }
+
+  .sphere::after {
+    content: "";
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    border-radius: 50%;
+    background-color: var(--sphere-color2);
+  }
+  
+  
+ .sphere {
+    width: 100px;
+    height: 100px;
+    position: absolute ;
+    border-radius: 50%;
+    background-color: var(--sphere-color1);
+    border: 2px solid var(--line-color);
+ 
+  }
+  
+    
+</style>
+
+<div class="sphere"></div>
