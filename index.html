@@ -9,10 +9,10 @@
   }
 
   body {
-    height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    left: 200px;
+    top: 250px;
     background-color: var(--bg-color);
   }
 
@@ -60,8 +60,93 @@
     border: 2px solid var(--line-color);
  
   }
-  
+
     
 </style>
 
+<style> 
+  :root {
+    --bg-color: #2a0000;
+    --sphere-color1: #610000;
+    --sphere-color2: #990f02;
+    --sphere-color3: #610000;
+    --line-color: #120307;
+    --highlight-color: #d0312d;
+  }
+
+  body {
+    display: flex;
+    position: absolute;
+    left: 200px;
+    top: 250px;
+    background-color: var(--bg-color);
+  }
+  .sphere2 {
+    width:100px;
+    height: 100px;
+    position: absolute;
+    left: 78px;
+    border-radius: 50%;
+    background-color: var(--sphere-color1);
+    border: 2px solid var(--line-color);
+    
+  }
+  
+  
+  .sphere2::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    z-index: 2;
+    left: 13px;
+    top: 12px;
+    border: 8px solid var(--highlight-color);
+    border-top-left-radius: 50px;
+    border-bottom: 0;
+    border-right: 0;
+  }
+
+  .sphere2::after {
+    content: "";
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    border-radius: 50%;
+    background-color: var(--sphere-color2);
+  }
+  
+  
+ .sphere2 {
+    width: 100px;
+    height: 100px;
+    position: absolute ;
+    border-radius: 50%;
+    background-color: var(--sphere-color1);
+    border: 2px solid var(--line-color);
+ 
+  } 
+</style>
+
+<style>
+
+  .rectangle {
+    width: 80px;
+    height: 14px;
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+    background-color: #378805;
+    border-radius: 15px
+      
+  }
+
+
+</style>
+           
+
 <div class="sphere"></div>
+<div class="sphere2"></div>
+<div class="rectangle"></div>
