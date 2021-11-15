@@ -126,27 +126,55 @@
     border-radius: 50%;
     background-color: var(--sphere-color1);
     border: 2px solid var(--line-color);
- 
   } 
+  
 </style>
 
 <style>
 
   .rectangle {
-    width: 80px;
+    content: "";
+    width: 75px;
     height: 14px;
     position: absolute;
-    left: 50px;
+    left: 44px;
     bottom: 100px;
     background-color: #378805;
-    border-radius: 15px
-      
+    border-radius: 15px 
+  }
+  
+</style>
+
+<style>
+
+  .diagonal-box {
+    background-color: #378805;
+    width: 46px;
+    height: 14px;
+    transform: skewY(-70deg);
+    position: absolute;
+    bottom: 38px;
+    left: 30px   
+  }
+  
+  .diagonal-box2 {
+    background-color: #378805;
+    width: 42px;
+    height: 14px;
+    transform: skewY(70deg);
+    position: absolute;
+    bottom: 40px;
+    left: 86px   
   }
 
-
 </style>
-           
+
+
+
 
 <div class="sphere"></div>
 <div class="sphere2"></div>
 <div class="rectangle"></div>
+<div class="diagonal-box"> </div>
+<div class="diagonal-box2"> </div>
+
